@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageOps
 import os
 
 input_dir = "data-raw/"
@@ -15,5 +15,8 @@ for i, filename in enumerate(os.listdir(input_dir)):
     img = img.convert("L")          
     img = img.resize((64, 64), Image.LANCZOS)  
     img.save(os.path.join(output_dir, name))
+    # augment with horizontal flip
+    flipped = ImageOps.mirror(img)
+    flipped.save(os.path.join(output_dir, f"{i}_flip.jpg"))
 
 print("Done!")
