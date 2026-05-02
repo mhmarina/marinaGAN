@@ -2,7 +2,7 @@ from PIL import Image, ImageOps
 import os
 
 input_dir = "data-raw/"
-output_dir = "data-preproc/"
+output_dir = "data-preproc/portraits/"
 # rename_dir = "data-rename/"
 os.makedirs(output_dir, exist_ok=True)
 
