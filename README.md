@@ -9,4 +9,5 @@ Used pytorch and training done in Colab
 
 Because of the data constraints, the outputs ended up looking more like eldritch entities than faces. However, if we squint and look at it from a distance, they kind of resemble the training set :)
 
-More: [Jupyter Notebook](GAN.ipynb)
+More: [Jupyter Notebook](GAN.ipynb)\
+Demo: [HuggingFace Spaces](https://huggingface.co/spaces/mhmarina/marinaGAN)
