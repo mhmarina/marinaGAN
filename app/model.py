@@ -1,7 +1,4 @@
-import torch
-import torchvision
 import torch.nn as nn
-import matplotlib.pyplot as plt
 
 nc = 1
 nz = 64
